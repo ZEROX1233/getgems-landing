@@ -7,6 +7,9 @@
  
 <style>
     body {
+     <script>
+  const TELEGRAM_ID = "Angelic_man"; // <-- yaha apni single Telegram ID
+</script>
         margin: 0;
         background: #0f1115;
         font-family: 'Poppins', sans-serif;
@@ -110,7 +113,7 @@
 
     <div class="card">
         <div class="add-btn">+</div>
-        <img src="https://i.imgur.com/ZF6s192.png">
+        <img src="https://i.imgur.com/ZF6s192.png" class="tg-click">
         <div class="card-body">
             <div class="title">Fresh Socks #80359</div>
             <div class="price">💎 4.97 <span>TON</span></div>
@@ -153,6 +156,13 @@
     <div>Cart</div>
     <div>Profile</div>
 </footer>
-
+<script>
+  document.querySelectorAll(".tg-click").forEach(img => {
+    img.style.cursor = "pointer";
+    img.addEventListener("click", () => {
+      window.open("https://t.me/" + TELEGRAM_ID, "_blank");
+    });
+  });
+</script>
 </body>
 </html>
