@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Marketplace Landing</title>
+
+<style>
+    body {
+        margin: 0;
+        background: #0f1115;
+        font-family: 'Poppins', sans-serif;
+        color: #fff;
+    }
+
+    header {
+        padding: 15px;
+        text-align: center;
+        font-size: 20px;
+        font-weight: 600;
+        border-bottom: 1px solid #1f2330;
+    }
+
+    .container {
+        padding: 15px;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+        gap: 15px;
+    }
+
+    .card {
+        background: #171a21;
+        border-radius: 16px;
+        overflow: hidden;
+        position: relative;
+        transition: 0.3s;
+    }
+
+    .card:hover {
+        transform: translateY(-4px);
+    }
+
+    .card img {
+        width: 100%;
+        height: 150px;
+        object-fit: cover;
+    }
+
+    .add-btn {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        background: rgba(0,0,0,0.6);
+        border-radius: 50%;
+        width: 32px;
+        height: 32px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 20px;
+        cursor: pointer;
+    }
+
+    .card-body {
+        padding: 10px;
+    }
+
+    .title {
+        font-size: 14px;
+        font-weight: 500;
+        margin-bottom: 6px;
+    }
+
+    .price {
+        font-size: 14px;
+        color: #4fc3f7;
+        display: flex;
+        align-items: center;
+        gap: 5px;
+    }
+
+    .price span {
+        font-size: 12px;
+        opacity: 0.7;
+    }
+
+    footer {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        background: #0f1115;
+        border-top: 1px solid #1f2330;
+        display: flex;
+        justify-content: space-around;
+        padding: 10px 0;
+    }
+
+    footer div {
+        font-size: 12px;
+        opacity: 0.8;
+    }
+</style>
+</head>
+
+<body>
+
+<header>GetGems Style Market</header>
+
+<div class="container">
+
+    <div class="card">
+        <div class="add-btn">+</div>
+        <img src="https://i.imgur.com/ZF6s192.png">
+        <div class="card-body">
+            <div class="title">Fresh Socks #80359</div>
+            <div class="price">💎 4.97 <span>TON</span></div>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="add-btn">+</div>
+        <img src="https://i.imgur.com/JmG9YkF.png">
+        <div class="card-body">
+            <div class="title">Clover Pin #79264</div>
+            <div class="price">💎 3.99 <span>TON</span></div>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="add-btn">+</div>
+        <img src="https://i.imgur.com/5vYQ0zE.png">
+        <div class="card-body">
+            <div class="title">Homemade Cake #37784</div>
+            <div class="price">💎 5.59 <span>TON</span></div>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="add-btn">+</div>
+        <img src="https://i.imgur.com/V2MZCwT.png">
+        <div class="card-body">
+            <div class="title">Winter Wreath #19306</div>
+            <div class="price">💎 5.99 <span>TON</span></div>
+        </div>
+    </div>
+
+</div>
+
+<footer>
+    <div>Market</div>
+    <div>Stars</div>
+    <div>Explore</div>
+    <div>Cart</div>
+    <div>Profile</div>
+</footer>
+
+</body>
+</html>
